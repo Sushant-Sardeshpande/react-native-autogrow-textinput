@@ -1,5 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import ReactNative, {View, TextInput, LayoutAnimation, Platform, NativeModules} from 'react-native';
+import React, {Component} from 'react';
+import {View, TextInput, LayoutAnimation, Platform} from 'react-native';
+import PropTypes from 'prop-types';
 
 const ANDROID_PLATFORM = (Platform.OS === 'android');
 const IOS_PLATFORM = (Platform.OS === 'ios');
@@ -198,7 +199,5 @@ AutoGrowingTextInput.defaultProps = {
   minHeight: 35,
   initialHeight: 35,
   maxHeight: null,
-  animation: {animated: false, duration: DEFAULT_ANIM_DURATION},
-  disableScrollAndBounceIOS: false,
-  enableScrollToCaretIOS: false,
+  animation: {animated: false, duration: DEFAULT_ANIM_DURATION}
 };
