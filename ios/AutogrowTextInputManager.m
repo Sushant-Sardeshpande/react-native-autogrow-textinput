@@ -34,7 +34,7 @@ NSUInteger const kMaxDeferedGetScrollView = 15;
   if (textView != nil && [self respondsToSelector:@selector(textViewDidChange:)])
   {
     dispatch_async(dispatch_get_main_queue(), ^{
-      //[self textViewDidChange:textView];
+      // [self textViewDidChange:textView];
     });
   }
 }
